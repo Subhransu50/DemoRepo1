@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 5, Time elapsed: 17.129 s <<< FAILURE! - in TestSuite
+login(com.crm.qa.testcases.HomePageTest)  Time elapsed: 15.592 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Reached error page: about:neterror?e=dnsNotFound&u=https%3A//www.freecrm.com/&c=UTF-8&f=regular&d=Firefox%20can%E2%80%99t%20find%20the%20server%20at%20www.freecrm.com.
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'USER-PC', ip: '192.168.43.120', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 56.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 4480, moz:profile: C:\Users\user\AppData\Local..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: e4bef511-ffbe-4d5d-b38d-90f744e82b3d
+	at com.crm.qa.testcases.HomePageTest.login(HomePageTest.java:46)
+
