@@ -51,7 +51,7 @@ public void login()
 	
 }
 
-/*@Test(priority=1,dataProvider="getTestData")
+@Test(priority=1,dataProvider="getTestData")
 public void verifyHomePageTitleTest(String username,String password) throws Exception 
 {
 	log.info("Proceeding for login");
@@ -60,9 +60,9 @@ Thread.sleep(5000);
 String a=homepage.verifyHomepageTitle();
 log.info("Comparing between original and expected result");
 Assert.assertEquals(a,"CRMPRO","Does not matched");
-}*/
+}
 
-@Test(priority=1,dataProvider="getTestData")
+@Test(priority=3,dataProvider="getTestData")
 public void verifyUserNameTest(String username,String password) throws Exception
 {	log.info("Proceeding for login");
 	homepage=loginpage.login(username, password);
@@ -74,7 +74,7 @@ public void verifyUserNameTest(String username,String password) throws Exception
 Assert.assertTrue(homepage.verifyUserNamePage());
 	
 }
-/*@Test(priority=2,dataProvider="getTestData")
+@Test(priority=2,dataProvider="getTestData")
 public void clickOnContactListTest(String username,String password) throws Exception 
 {	log.info("Proceeding for login");
 	homepage=loginpage.login(username, password);
@@ -84,7 +84,7 @@ testutil.switchToFrame();
 Thread.sleep(5000);
 log.info("Clicking over Contacts page");
 	contact=homepage.clickOnContactsLink();
-}*/
+}
 
 
 @AfterMethod
